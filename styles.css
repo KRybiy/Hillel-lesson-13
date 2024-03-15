@@ -1,0 +1,18 @@
+.square {
+  stroke-dasharray: 100;
+  animation: dash-fill 5s linear infinite;
+}
+
+@keyframes dash-fill {
+  0% {
+      stroke-dashoffset: 1000;
+      fill: pink;
+  }
+  50% {
+      fill: white;
+  }
+  100% {
+      stroke-dashoffset: 0;
+      fill: pink;
+  }
+}
